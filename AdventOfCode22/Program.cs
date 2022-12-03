@@ -4,7 +4,7 @@ using System;
 namespace MyApp
 {
     internal class Program {
-        private static Puzzle mSelectedPuzzle = Puzzle.DAY_2_PART_2;
+        private static Puzzle mSelectedPuzzle = Puzzle.DAY_3_PART_2;
         private static string mInputFileRootDir = "C:\\Users\\theco\\source\\repos\\AdventOfCode22\\AdventOfCode22\\bin\\Debug\\net6.0\\";
 
         static void Main(string[] args) {
@@ -20,6 +20,12 @@ namespace MyApp
                     break;
                 case Puzzle.DAY_2_PART_2:
                     DoPuzzle(mPuzzleFileDayTwo, DayTwo.DayTwo_PartTwo);
+                    break;
+                case Puzzle.DAY_3_PART_1:
+                    DoPuzzle(mPuzzleFileDayThree, DayThree.DayThree_PartOne);
+                    break;
+                case Puzzle.DAY_3_PART_2:
+                    DoPuzzle(mPuzzleFileDayThree, DayThree.DayThree_PartTwo);
                     break;
                 default:
                     break;
@@ -56,10 +62,13 @@ namespace MyApp
             DAY_1_PART_1,
             DAY_1_PART_2,
             DAY_2_PART_1,
-            DAY_2_PART_2
+            DAY_2_PART_2,
+            DAY_3_PART_1,
+            DAY_3_PART_2
         }
 
         private static readonly string mPuzzleFileDayOne = "DayOne.txt";
         private static readonly string mPuzzleFileDayTwo = "DayTwo.txt";
+        private static readonly string mPuzzleFileDayThree = "DayThree.txt";
     }
 }
