@@ -4,7 +4,7 @@ using System;
 namespace MyApp
 {
     internal class Program {
-        private static Puzzle mSelectedPuzzle = Puzzle.DAY_3_PART_2;
+        private static Puzzle mSelectedPuzzle = Puzzle.DAY_5_PART_2;
         private static string mInputFileRootDir = "C:\\Users\\theco\\source\\repos\\AdventOfCode22\\AdventOfCode22\\bin\\Debug\\net6.0\\";
 
         static void Main(string[] args) {
@@ -26,6 +26,18 @@ namespace MyApp
                     break;
                 case Puzzle.DAY_3_PART_2:
                     DoPuzzle(mPuzzleFileDayThree, DayThree.DayThree_PartTwo);
+                    break;
+                case Puzzle.DAY_4_PART_1:
+                    DoPuzzle(mPuzzleFileDayFour, DayFour.DayFour_PartOne);
+                    break;
+                case Puzzle.DAY_4_PART_2:
+                    DoPuzzle(mPuzzleFileDayFour, DayFour.DayFour_PartTwo);
+                    break;
+                case Puzzle.DAY_5_PART_1:
+                    DoPuzzle(mPuzzleFileDayFive, DayFive.DayFive_PartOne);
+                    break;
+                case Puzzle.DAY_5_PART_2:
+                    DoPuzzle(mPuzzleFileDayFive, DayFive.DayFive_PartTwo);
                     break;
                 default:
                     break;
@@ -64,11 +76,17 @@ namespace MyApp
             DAY_2_PART_1,
             DAY_2_PART_2,
             DAY_3_PART_1,
-            DAY_3_PART_2
+            DAY_3_PART_2,
+            DAY_4_PART_1,
+            DAY_4_PART_2,
+            DAY_5_PART_1,
+            DAY_5_PART_2
         }
 
         private static readonly string mPuzzleFileDayOne = "DayOne.txt";
         private static readonly string mPuzzleFileDayTwo = "DayTwo.txt";
         private static readonly string mPuzzleFileDayThree = "DayThree.txt";
+        private static readonly string mPuzzleFileDayFour = "DayFour.txt";
+        private static readonly string mPuzzleFileDayFive = "DayFive.txt";
     }
 }
